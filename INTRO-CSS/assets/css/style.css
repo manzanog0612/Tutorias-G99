@@ -1,0 +1,67 @@
+.quitar-margen{
+  margin:0
+}
+
+.banner{
+  background-image: url("../imgs/hero.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 60px;
+  text-align: center;
+  object-fit: cover;
+  color: white;
+}
+
+h3 {
+  color: red;
+  font-size: 50px;
+}
+/* SELECTOR POR CLASE */
+.selector-por-clase {
+  color: blue;
+  font-size: 30px;
+}
+
+.texto-rojo-cursiva {
+  color: red;
+  font-size: 8px;
+  font-style: italic;
+}
+
+/* SELECTOR POR ID */
+#selector-por-id {
+  color: green;
+  font-size: 40px;
+}
+
+
+.bloque{
+  display: block;
+}
+
+.enlinea{
+  display: inline;
+}
+
+.flexbox-container{
+  display: flex;
+  justify-content: center;
+}
+
+.ver-caja{
+  border: 1px solid orange;
+}
+
+
+.enlace{
+  color: blue;
+
+}
+
+.img-cuadrada{
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border: 1px solid red;
+}

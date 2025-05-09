@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tutoría de CSS</title>
+
+    <!-- primero se esta leyendo el archivo externo -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- se esta leyendo segundo -->
+    <style>
+      a {
+        color: green;
+      }
+    </style>
+    <!-- se esta leyendo tercero, por lo tanto PISA a todos los demás y normaliza los estilos -->
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+  </head>
+
+  <body class="quitar-margen">
+    <div class="banner">
+      <h2 class="quitar-margen">Tutoría de CSS</h2>
+      <p class="quitar-margen">Esta es una página de prueba</p>
+    </div>
+
+    <h1 class="ver-caja enlinea">Hello World</h1>
+
+    <h3 class="ver-caja enlinea">SELECTOR POR ETIQUETA</h3>
+
+
+
+    <h2 class="selector-por-clase ver-caja">SELECTOR POR CLASE</h2>
+
+    <h2 class="ver-caja" id="selector-por-id">SELECTOR POR ID</h2>
+
+    <!-- Este se lee tercero por lo tanto PISA a todos los demás -->
+    <a class="enlace" style="color: brown" href="./portfolio.html"
+      >ir a mi portfolio</a
+    >
+
+    <!-- ESTILOS IN-LINE -->
+    <img
+      class="ver-caja"
+      style="width: 200px"
+      src="./assets/imgs/gatito.avif"
+      alt="Imagen de 3 gatitos"
+    />
+
+    <p class="texto-rojo-cursiva ver-caja">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque eius nam
+      deserunt nobis ea dicta fuga, aperiam, necessitatibus amet officiis
+      veritatis unde quaerat aliquam blanditiis doloribus debitis autem quisquam
+      eaque!
+    </p>
+
+    <div class="flexbox-container">
+
+        <img class="img-cuadrada" src="./assets/imgs/gatito.avif"  alt="">
+    </div>
+
+    <section class="flexbox-container">
+      <div class="img1">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium
+          incidunt beatae distinctio obcaecati, ipsam in optio necessitatibus
+          possimus perferendis nemo nisi. Error architecto ullam laboriosam nam
+          saepe maiores cum eligendi?
+        </p>
+      </div>
+      <div class="img2">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium
+          incidunt beatae distinctio obcaecati, ipsam in optio necessitatibus
+          possimus perferendis nemo nisi. Error architecto ullam laboriosam nam
+          saepe maiores cum eligendi?
+        </p>
+      </div>
+      <div class="img3">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium
+          incidunt beatae distinctio obcaecati, ipsam in optio necessitatibus
+          possimus perferendis nemo nisi. Error architecto ullam laboriosam nam
+          saepe maiores cum eligendi?
+        </p>
+      </div>
+    </section>
+
+    <h3 class="ver-caja" style="display: inline-block">Hola</h3>
+  </body>
+</html>

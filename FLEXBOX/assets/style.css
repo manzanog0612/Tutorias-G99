@@ -1,0 +1,66 @@
+body{
+    font-family: "Raleway", sans-serif;
+    margin: 0
+}
+
+.box{
+    border: 1px solid red;
+    height: 100px;
+}
+
+.box:hover{
+    font-size: larger;
+    background-color: #1E1A13;
+    border: 4px solid red;
+}
+
+.span-ej{
+    border: 1px solid green;
+    height: 100px;
+}
+
+img{
+    height: 300px;
+}
+
+.flex-container{
+    background-color: rgb(230, 230, 230);
+    display: flex;
+    justify-content: center; /* Alinea los elementos horizontalmente */
+    align-items: center; /* Alinea los elementos verticalmente */
+    gap: 10px; /* Define el espacio entre los elementos */
+}
+
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.parrafo-wrap{
+    border: 1px solid red;
+    width: 200px;
+    text-wrap: wrap; /* Esto hace que el texto se ajuste a la anchura del contenedor */
+}
+
+
+
+.raleway-font {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.ofertas{
+    background-color: bisque;
+    padding: 30px;
+    text-align: center;
+}
+
+
+.ofertas-div{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row; /* Por defecto es row y podemos cambiarlo a column */
+}

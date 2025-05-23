@@ -1,0 +1,22 @@
+.bg-verde-claro{
+    background-color: #28a745;
+}
+
+.text-verde-claro{
+    color: #28a745;
+}
+
+.bg-orange{
+    background-color: #ff5722;
+}
+
+.imagen-card{
+    height: 200px;
+    object-fit: cover;
+}
+
+.centrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -71,3 +71,29 @@ body {
     transform: translateY(-5px) scale(1.02); /* 🔼 La caja se eleva 5px y aumenta ligeramente de tamaño */
     background-color: #444; /* 🎨 Cambia ligeramente el fondo al pasar el mouse */
 }
+
+/* 🌌 Galería de imágenes */
+.gallery {
+    display: flex; /* 🧠 Activa Flexbox */
+    flex-wrap: wrap; /* 🔁 Permite que los items pasen a la siguiente línea si no entran */
+    gap: 20px; /* 🪟 Espacio entre las imágenes */
+    justify-content: center; /* ↔️ Centra la galería horizontalmente */
+    padding: 40px 20px; /* 🧽 Espacio interno */
+    background-color: #242424; /* 🎨 Fondo oscuro para diferenciar la galería */
+    border-top: 2px solid #21b84e; /* 🎯 Línea superior */
+}
+
+/* 🎨 Estilo de las imágenes */
+.gallery img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover; /* ✂️ Mantiene la proporción recortando lo que sobra */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.gallery img:hover {
+    transform: scale(1.05); /* 🔍 Efecto zoom al pasar el mouse */
+}

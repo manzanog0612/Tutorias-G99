@@ -1,0 +1,73 @@
+/* 🔧 Reset básico (esto limpia estilos por defecto del navegador) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 🎨 Estilo general del body */
+body {
+    background-color: #1e1e1e;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #fff;
+}
+
+/* 🚩 Estilos de la barra de navegación (navbar) */
+.navbar {
+    background-color: #242424;
+    color: white;
+    padding: 15px 30px;
+
+    /* 💡 Aquí usamos FLEXBOX */
+    display: flex; /* 🧠 Activa Flexbox: convierte los hijos directos (.logo, .title, .grupo) en elementos flexibles dentro de la navbar. */
+
+    justify-content: space-between; /* ↔️ Distribuye los elementos con el máximo espacio posible entre ellos. Uno queda a la izquierda, otro al centro, otro a la derecha. */
+
+    align-items: center; /* ↕️ Centra los elementos verticalmente dentro de la navbar. */
+
+    border-bottom: 2px solid #21b84e; /* Línea inferior para darle un toque visual. */
+}
+
+/* 🎯 Título de la navbar */
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #187e29;
+}
+
+/* 📦 Grupo (texto) */
+.grupo {
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+/* 🚀 Flex container principal */
+.container {
+    display: flex; /* 🧠 Activa Flexbox: convierte a los hijos (.box) en elementos flexibles que pueden alinearse fácilmente. */
+
+    justify-content: center; /* ↔️ Centra todos los elementos hijos (.box) horizontalmente en el medio del contenedor. */
+
+    flex-direction: row; /* 🔄 Alinea los hijos en fila horizontal (este es el valor por defecto, pero lo dejamos explícito para enseñar). */
+
+    gap: 20px; /* 🪟 Espacio de 20px entre cada item (súper práctico, más limpio que usar margin manual). */
+
+    margin: 50px auto; /* 📐 Separa el contenedor del borde superior e inferior, y centra horizontalmente (auto en los lados). */
+
+    padding: 20px; /* 🧽 Espacio interno del contenedor. */
+}
+
+/* 🎁 Flex items */
+.box {
+    background-color: #333; /* Color del fondo de cada caja */
+    padding: 40px 60px; /* 🧸 Espacio interno: vertical 40px, horizontal 60px */
+    border-radius: 12px; /* 🥚 Bordes redondeados */
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3); /* 🌫️ Sombra para efecto de profundidad */
+    cursor: pointer; /* 👉 Cambia el cursor para que parezca clickeable */
+    transition: transform 0.3s ease; /* ⏳ Transición suave para el hover */
+}
+
+/* 🪄 Efecto hover */
+.box:hover {
+    transform: translateY(-5px) scale(1.02); /* 🔼 La caja se eleva 5px y aumenta ligeramente de tamaño */
+    background-color: #444; /* 🎨 Cambia ligeramente el fondo al pasar el mouse */
+}

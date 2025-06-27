@@ -45,10 +45,10 @@ body {
 .container {
     display: flex; /* 🧠 Activa Flexbox: convierte a los hijos (.box) en elementos flexibles que pueden alinearse fácilmente. */
 
-    justify-content: center; /* ↔️ Centra todos los elementos hijos (.box) horizontalmente en el medio del contenedor. */
-
-    flex-direction: row; /* 🔄 Alinea los hijos en fila horizontal (este es el valor por defecto, pero lo dejamos explícito para enseñar). */
-
+    
+    flex-direction: column; /* 🔄 Alinea los hijos en fila horizontal (este es el valor por defecto, pero lo dejamos explícito para enseñar). */
+    align-items: end;
+    justify-content: end; /* ↔️ Centra todos los elementos hijos (.box) horizontalmente en el medio del contenedor. */
     gap: 20px; /* 🪟 Espacio de 20px entre cada item (súper práctico, más limpio que usar margin manual). */
 
     margin: 50px auto; /* 📐 Separa el contenedor del borde superior e inferior, y centra horizontalmente (auto en los lados). */
